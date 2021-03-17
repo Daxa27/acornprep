@@ -9,22 +9,24 @@
     <meta name="descriptiion"
         content="AcornPrep is an organization commited to providing universal access to high quality test prep for big international exams such as the SAT.">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./dist/style.css">
 </head>
-<script>
-    nav();
-</script>
+
 <div id="nav">
 
     <img id="logo" src="./images/logo.svg" alt="Logo">
     <p id="name">AcornPrep</p>
 
     <div id="icon">
-        <i onclick="nav()" class="fa fa-bars"></i>
+        <i id="ic" onclick="nav()" class="fa fa-cross"></i>
     </div>
 </div>
 <div class="open" id="sidebar">
@@ -50,32 +52,87 @@
     </div>
     </div>
     <div id="second" class="container">
+
         <h2>About Us</h2><br>
-        <div style="height:100vh" align="center" class="row">
+        <div align="center" class="row">
             <div class="col-sm">
+                <i class="fa fa-crosshairs" aria-hidden="true"></i>
                 <h3>Our Mission</h3>
                 <p>
-                    AcornPrep was created with the vision of providing universal access to high quality tutoring.
+                    AcornPrep was created with the vision of providing universal access to high quality tutoring for big
+                    international exams.
                 </p>
             </div>
             <div class="col-sm">
+                <i class="fa fa-graduation-cap" aria-hidden="true"></i>
                 <h3>Scholarships</h3>
                 <p>
                     We provide students with scholarships (up to 100%) so that they face no boundaries in their
-                    journey.
+                    journey to success.
                 </p>
             </div>
             <div class="col-sm">
+                <i class="fa fa-user"></i>
                 <h3>Our Tutors</h3>
                 <p>
-                    We offer the best student tutors at affordable rates to help you in every step towards your dream
+                    We provide the best student tutors with experience to help you in every step towards your dream
                     scores.
                 </p>
             </div>
+        </div><br><br>
+        <h2>Our Services</h2><br>
+        <div align="center" class="row">
+            <div class="col-sm">
+                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                <h3>Tutoring</h3>
+                <p>
+                    We conduct one-on-one as well as group sessions on the platform of your choice (eg: Zoom). Our
+                    learning model focuses on teaching to the test with first hand experience from our tutors.
+                </p>
+            </div>
+            <div class="col-sm">
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <h3>Resources</h3>
+                <p>
+                    We suggest and provide the best resources which have proven to work for top scorers. We
+                    also have a private Discord Server for students to get instant answers and help.
+                </p>
+            </div>
+            <div class="col-sm">
+                <i class="fa fa-comments"></i>
+                <h3>Counseling</h3>
+                <p>
+                    As students, we understand that you face issues with learning and guidance and so we are also
+                    available to talk to anytime regarding your prep, school work and other academic issues.
+                </p>
+            </div>
         </div>
+        <br><br>
+        <h2>Why Choose Us?</h2><br>
+        <div align="center" class="row">
+            <div class="col-sm">
+                <i class="fa fa-handshake-o" aria-hidden="true"></i>
+                <h3>Firsthand Experience</h3>
+                <p>
+                    Our tutors have firsthand experience of studying for and taking the tests and are in the 99+
+                    percentile of their fields. They also have experience of juggling schoolwork and test prep and
+                    therefore understand difficulties students face.
+                </p>
+            </div>
+            <div class="col-sm">
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <h3>Worldwide Service</h3>
+                <p>
+                    Our tutors are located in multiple timezones and as a result, we are able to cover most parts of
+                    the globe. We are available at multiple hours during the day and at night for tutoring and questions
+                    (on our Discord Server).
+                </p>
+            </div>
 
-
-        <h2>Co-Founders of AcornPrep</h2><br><br>
+        </div>
+        <hr>
+        <br><br>
+        <h2>Co-Founders</h2><br><br>
 
         <div id="pics" align="center" class="row">
             <div class="profile col-sm">
@@ -101,23 +158,29 @@
         </div>
 
         <br><br>
-        <h2>Connect with Us</h2>
-
-        <a href="https://instagram.com/acorn.prep"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-        <a href="mailto:"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        <div align="center">
+            <h2>Connect with Us</h2>
+            <a class="links" href="https://instagram.com/acorn.prep"><i class="fa fa-instagram"
+                    aria-hidden="true"></i></a>
+            <a class="links" href="mailto:"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        </div>
     </div>
     </div>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <script>
         function nav() {
             ob = document.getElementById('sidebar');
+            icon = document.getElementById('ic');
             if (ob.className === "open") {
                 ob.className = "closed";
+                icon.className = "fa fa-bars";
             } else {
                 ob.className = "open";
+                icon.className = "fa fa-times";
             }
 
         }
+        nav();
     </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

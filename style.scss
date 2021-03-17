@@ -5,13 +5,14 @@ html {
   padding: 0;
   color: #363636;
   background: #f5f5f5;
+  font-family: "Encode Sans", sans-serif !important;
 }
 body {
   background: none;
   z-index: 2;
 }
-html::selection {
-  background-color: #34b07c;
+*::selection {
+  background: #34b07c;
   color: #f5f5f5;
 }
 /*navbar*/
@@ -30,6 +31,7 @@ html::selection {
     float: right;
     font-size: 2rem;
     cursor: pointer;
+    transition: 1s all;
   }
   #name {
     font-size: 1.5rem;
@@ -112,14 +114,24 @@ a:hover {
     margin: 0.6rem;
     font-weight: bold;
     font-size: 1.7rem;
+    transition: 1s all;
+  }
+  #links a:hover {
+    background: $lightbr;
   }
 }
-
+#icon:hover {
+  color: #34b07c;
+}
 #second {
   .col-sm {
     h3 {
       font-size: 1.6rem;
       color: $lightbr;
+    }
+    i {
+      color: $lightbr;
+      font-size: 2rem;
     }
     p {
       text-align: justify;
@@ -141,6 +153,15 @@ a:hover {
     width: 9rem;
     margin-bottom: 0.5rem;
   }
+}
+.links {
+  color: $lightbr;
+  font-size: 3rem;
+  margin: 1rem;
+  transition: 1s all;
+}
+.links:hover {
+  color: #34b07c;
 }
 
 /*footer*/
