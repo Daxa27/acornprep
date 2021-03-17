@@ -54,7 +54,7 @@ body {
 
 #sidebar {
   background: #34b07cfe;
-  width: 15rem;
+  width: 12rem;
   position: fixed;
   right: 0;
   top: 0;
@@ -83,7 +83,7 @@ body {
 }
 
 .closed {
-  transform: translateX(15rem);
+  transform: translateX(12rem);
 }
 
 .open {
