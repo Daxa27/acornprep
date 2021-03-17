@@ -5,6 +5,7 @@ html {
   padding: 0;
   color: #363636;
   background: #f5f5f5;
+  scroll-behavior: smooth;
 }
 body {
   background: none;
@@ -19,11 +20,13 @@ body {
   width: 100%;
   display: block;
   position: fixed;
+
   top: 0;
   z-index: 2;
   border-bottom: 2px solid $lightbr;
   color: #3e281b;
   background-color: $white;
+
   #icon {
     margin-top: 0.1rem;
     margin-right: 1rem;
@@ -38,6 +41,7 @@ body {
     float: left;
     margin-left: 0.7rem;
     font-weight: 500;
+    margin-bottom: 0.6rem;
   }
   #logo {
     float: left;
@@ -61,11 +65,18 @@ body {
     a {
       color: $white;
       font-size: 1.5rem;
-      transition: 0.5s all;
+      transition: 1s all;
       border-bottom: 2px solid transparent;
     }
     a:hover {
       border-bottom: 2px solid $white;
+    }
+    .links:hover {
+      color: $lightbr;
+      border: none;
+    }
+    .links {
+      border: none;
     }
   }
 
@@ -140,6 +151,15 @@ a:hover {
   h2 {
     text-align: center;
   }
+  .links {
+    color: $lightbr;
+    font-size: 3rem;
+    margin: 1rem;
+    transition: 1s all;
+  }
+  .links:hover {
+    color: #34b07c;
+  }
 }
 
 #pics {
@@ -152,15 +172,6 @@ a:hover {
     width: 9rem;
     margin-bottom: 0.5rem;
   }
-}
-.links {
-  color: $lightbr;
-  font-size: 3rem;
-  margin: 1rem;
-  transition: 1s all;
-}
-.links:hover {
-  color: #34b07c;
 }
 
 /*footer*/

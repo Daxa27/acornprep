@@ -3,6 +3,7 @@ html {
   padding: 0;
   color: #363636;
   background: #f5f5f5;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -40,6 +41,7 @@ body {
   float: left;
   margin-left: 0.7rem;
   font-weight: 500;
+  margin-bottom: 0.6rem;
 }
 #nav #logo {
   float: left;
@@ -66,11 +68,18 @@ body {
 #sidebar li a {
   color: #f5f5f5;
   font-size: 1.5rem;
-  transition: 0.5s all;
+  transition: 1s all;
   border-bottom: 2px solid transparent;
 }
 #sidebar li a:hover {
   border-bottom: 2px solid #f5f5f5;
+}
+#sidebar li .links:hover {
+  color: #814343;
+  border: none;
+}
+#sidebar li .links {
+  border: none;
 }
 
 .closed {
@@ -141,6 +150,15 @@ a:hover {
 #second h2 {
   text-align: center;
 }
+#second .links {
+  color: #814343;
+  font-size: 3rem;
+  margin: 1rem;
+  transition: 1s all;
+}
+#second .links:hover {
+  color: #34b07c;
+}
 
 #pics .name {
   color: #814343;
@@ -150,17 +168,6 @@ a:hover {
   height: 9rem;
   width: 9rem;
   margin-bottom: 0.5rem;
-}
-
-.links {
-  color: #814343;
-  font-size: 3rem;
-  margin: 1rem;
-  transition: 1s all;
-}
-
-.links:hover {
-  color: #34b07c;
 }
 
 /*footer*/
