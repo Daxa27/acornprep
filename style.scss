@@ -28,7 +28,7 @@ body {
   background-color: $white;
 
   #icon {
-    margin-top: 0.15rem;
+    margin-top: 0.2rem;
     margin-right: 1rem;
     float: right;
     font-size: 2rem;
@@ -105,6 +105,7 @@ a:hover {
   h1 {
     color: $lightbr;
     font-size: 4rem;
+    margin-bottom: 0;
   }
   p {
     font-size: 1.4rem;

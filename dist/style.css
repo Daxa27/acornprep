@@ -28,7 +28,7 @@ body {
   background-color: #f5f5f5;
 }
 #nav #icon {
-  margin-top: 0.15rem;
+  margin-top: 0.2rem;
   margin-right: 1rem;
   float: right;
   font-size: 2rem;
@@ -107,6 +107,7 @@ a:hover {
 #first h1 {
   color: #814343;
   font-size: 4rem;
+  margin-bottom: 0;
 }
 #first p {
   font-size: 1.4rem;
