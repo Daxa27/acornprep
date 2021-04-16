@@ -181,6 +181,9 @@ a:hover {
     color: $lightbr;
     font-size: 1.3rem;
   }
+  .description{
+    text-align: center !important;
+  }
   img {
     border-radius: 50%;
     height: 9rem;
@@ -233,5 +236,24 @@ a:hover {
     #links a {
       font-size: 1rem;
     }
+  }
+}
+
+/*footer*/
+footer{
+  color: $lightbr;
+  background-color:$white;
+  text-align: center;
+  width:100%;
+  
+  font-weight: 500;
+  a{
+    text-decoration: none;
+    color:#34b07c;
+    transition: 0.5s all;
+  }
+  a:hover{
+    text-decoration: none;
+    color: $lightbr
   }
 }
