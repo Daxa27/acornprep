@@ -176,13 +176,13 @@ a:hover {
   }
 }
 
-#pics {
+#pics, .pics {
   .name {
     color: $lightbr;
     font-size: 1.3rem;
   }
   .description{
-    text-align: center !important;
+    text-align: center;
   }
   img {
     border-radius: 50%;
@@ -241,19 +241,20 @@ a:hover {
 
 /*footer*/
 footer{
-  color: $lightbr;
-  background-color:$white;
+  color: $white;
+  background-color:$green;
   text-align: center;
   width:100%;
   
   font-weight: 500;
   a{
     text-decoration: none;
-    color:#34b07c;
+    color: $white;
     transition: 0.5s all;
   }
   a:hover{
     text-decoration: none;
     color: $lightbr
   }
+ 
 }
