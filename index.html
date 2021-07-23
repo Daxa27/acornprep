@@ -1,237 +1,123 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-    <title>AcornPrep</title>
-    <meta property="og:image" content="http://acornprep.live/images/logo.png" />
-    <link rel="shortcut icon" href="./apple-touch-icon-114x114.png" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
-    <link rel="apple-touch-icon" sizes="57x57" href="./apple-touch-icon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="./apple-touch-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="76x76" href="./apple-touch-icon-76x76.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="./apple-touch-icon-114x114.png" />
-    <link rel="apple-touch-icon" sizes="120x120" href="./apple-touch-icon-120x120.png" />
-    <link rel="apple-touch-icon" sizes="144x144" href="./apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon" sizes="152x152" href="./apple-touch-icon-152x152.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon-180x180.png" />
+  <head>
+  	<title>Contact Form 02</title>
     <meta charset="utf-8">
-    <meta name="author" content="Sammarth Kumar">
-    <meta name="descriptiion"
-        content="Acorn Prep paves a simple route for struggling SAT test-takers. Our tutoring service allows you to communicate with top students across the globe for personal consultation and advice. Given that our services are provided by students, we can guarantee a warm, embracing community for you to rely on at all times. Acorn prep unlocks a haven of resources where you can find a variety of popular books and plenty of practice materials. At Acorn Prep we believe that money shouldn't hold you back, so the best part of the experience is that we provide 100% need-blind services! So what are you waiting for? Sign up now and start your journey with Acorn Prep.">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./dist/style.css">
-</head>
-<div id="nav">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
 
-    <img id="logo" src="./images/logo.svg" alt="Logo">
-    <p id="name">AcornPrep</p>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="css/style.css">
 
-    <div id="icon">
-        <i id="ic" onclick="nav()" class="fa fa-cross"></i>
-    </div>
-</div>
-<div class="closed" id="sidebar">
-    <ul type="none">
-        <li><a href="#second">About Us</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#why">Why Us?</a></li>
-        <li><a href="tutors">Our Tutors</a></li>
-        <li><a href="#connect">Connect</a></li>
-        <li><a href=" ">Reviews</a></li>
-        <li><a class="links" href="https://instagram.com/acorn.prep"><i class="fa fa-instagram"
-                    aria-hidden="true"></i></a>
-            <a class="links" href="mailto:"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
-    </ul>
-</div>
+	</head>
+	<body>
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section">Contact Form #02</h2>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-12">
+					<div class="wrapper">
+						<div class="row no-gutters">
+							<div class="col-lg-8 col-md-7 order-md-last d-flex align-items-stretch">
+								<div class="contact-wrap w-100 p-md-5 p-4">
+									<h3 class="mb-4">Get in touch</h3>
+									<div id="form-message-warning" class="mb-4"></div> 
+				      		<div id="form-message-success" class="mb-4">
+				            Your message was sent, thank you!
+				      		</div>
+									<form method="POST" id="contactForm" name="contactForm" class="contactForm">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="form-group">
+													<label class="label" for="name">Full Name</label>
+													<input type="text" class="form-control" name="name" id="name" placeholder="Name">
+												</div>
+											</div>
+											<div class="col-md-6"> 
+												<div class="form-group">
+													<label class="label" for="email">Email Address</label>
+													<input type="email" class="form-control" name="email" id="email" placeholder="Email">
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="label" for="subject">Subject</label>
+													<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="label" for="#">Message</label>
+													<textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Message"></textarea>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="submit" value="Send Message" class="btn btn-primary">
+													<div class="submitting"></div>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-5 d-flex align-items-stretch">
+								<div class="info-wrap bg-primary w-100 p-md-5 p-4">
+									<h3>Let's get in touch</h3>
+									<p class="mb-4">We're open for any suggestion or just to have a chat</p>
+				        	<div class="dbox w-100 d-flex align-items-start">
+				        		<div class="icon d-flex align-items-center justify-content-center">
+				        			<span class="fa fa-map-marker"></span>
+				        		</div>
+				        		<div class="text pl-3">
+					            <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
+					          </div>
+				          </div>
+				        	<div class="dbox w-100 d-flex align-items-center">
+				        		<div class="icon d-flex align-items-center justify-content-center">
+				        			<span class="fa fa-phone"></span>
+				        		</div>
+				        		<div class="text pl-3">
+					            <p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
+					          </div>
+				          </div>
+				        	<div class="dbox w-100 d-flex align-items-center">
+				        		<div class="icon d-flex align-items-center justify-content-center">
+				        			<span class="fa fa-paper-plane"></span>
+				        		</div>
+				        		<div class="text pl-3">
+					            <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+					          </div>
+				          </div>
+				        	<div class="dbox w-100 d-flex align-items-center">
+				        		<div class="icon d-flex align-items-center justify-content-center">
+				        			<span class="fa fa-globe"></span>
+				        		</div>
+				        		<div class="text pl-3">
+					            <p><span>Website</span> <a href="#">yoursite.com</a></p>
+					          </div>
+				          </div>
+			          </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-<body>
-    <!--
-    <img src="./images/logo.svg" style="transform: scale(0.6);padding-bottom:1rem;">
--->
-    <div id="first">
-        <h1>AcornPrep</h1>
-        <p>Democratizing test prep worldwide</p>
-        <br><br>
-        <div id="links">
-            <H2>Join Us</H2>
-            <div>
-                <a class="col-lg" href="https://forms.gle/7DyPw5DUm3m6p1Cw7" target="_blank">As a Student</a><a
-                    class="col-lg" href="https://docs.google.com/forms/d/e/1FAIpQLSdO7t5JKOaNalCfCvLwt_jIik1ttGqOUqj2qBVOhVXIDmD81g/viewform?usp=sf_link" target="_blank">As a Tutor</a>
-            </div>
-        </div><br><br>
+	<script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/main.js"></script>
 
-        <script>
-            function pop() {
-                var e = document.getElementById('video');
-            }
-        </script>
-    </div>
-    </div>
-    <div id="second" class="container">
-
-        <h2>About Us</h2><br>
-        <div align="center" class="row">
-            <div class="container">
-                <p style="text-align:justify">
-                    AcornPrep paves a simple route for struggling SAT test-takers. Our tutoring service allows you to
-                    communicate with top students across the globe for personal consultation and advice. Given that our
-                    services are provided by students, we can guarantee a warm, embracing community for you to rely on
-                    at
-                    all times. AcornPrep unlocks a haven of resources where you can find a variety of popular books and
-                    plenty of practice materials. At AcornPrep we believe that money shouldn't hold you back, so the
-                    best
-                    part of the experience is that we provide 100% need-blind services! So what are you waiting for?
-                    Sign up
-                    now and start your journey with AcornPrep.
-                </p>
-            </div><br><br>
-            <div class="col-sm">
-                <i class="fa fa-crosshairs" aria-hidden="true"></i>
-                <h3>Our Mission</h3>
-                <p>
-                    AcornPrep was created with the vision of providing universal access to high quality tutoring for big
-                    international exams.
-                </p>
-            </div>
-            <div class="col-sm">
-                <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                <h3>Universal Access</h3>
-                <p>
-                    We provide students who cannot afford tutors with free education so that they face no boundaries in
-                    their journey.
-                </p>
-            </div>
-            <div class="col-sm">
-                <i class="fa fa-user"></i>
-                <h3>Our Tutors</h3>
-                <p>
-                    We provide the best student tutors with experience to help you in every step towards your dream
-                    scores.
-                </p>
-            </div>
-        </div><br><br>
-        <h2 id="services">Our Services</h2><br>
-        <div align="center" class="row">
-            <div class="col-sm">
-                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-                <h3>Tutoring</h3>
-                <p>
-                    We conduct one-on-one as well as group sessions on the platform of your choice (eg: Zoom). Our
-                    learning model focuses on teaching to the test with first hand experience from our tutors.
-                </p>
-            </div>
-            <div class="col-sm">
-                <i class="fa fa-book" aria-hidden="true"></i>
-                <h3>Resources</h3>
-                <p>
-                    We suggest and provide the best resources which have proven to work for top scorers. We
-                    also have a private Discord Server for students to get instant answers and help.
-                </p>
-            </div>
-            <div class="col-sm">
-                <i class="fa fa-comments"></i>
-                <h3>Counseling</h3>
-                <p>
-                    As students, we understand that you face issues with learning and guidance and so we are also
-                    available to talk to anytime regarding your prep, school work and other academic issues.
-                </p>
-            </div>
-        </div>
-        <br><br>
-        <h2 id="why">Why Choose Us?</h2><br>
-        <div align="center" class="row">
-            <div class="col-sm">
-                <i class="fa fa-handshake-o" aria-hidden="true"></i>
-                <h3>Firsthand Experience</h3>
-                <p>
-                    Our tutors have firsthand experience of studying for and taking the tests and are in the 99+
-                    percentile of their fields. They also have experience of juggling schoolwork and test prep and
-                    therefore understand difficulties students face.
-                </p>
-            </div>
-            <div class="col-sm">
-                <i class="fa fa-globe" aria-hidden="true"></i>
-                <h3>Worldwide Service</h3>
-                <p>
-                    Our tutors are located in multiple timezones and as a result, we are able to cover most parts of
-                    the globe. We are available at multiple hours during the day and at night for tutoring and questions
-                    (on our Discord Server).
-                </p>
-            </div>
-
-        </div>
-        <hr>
-        <br><br>
-        <h2>Co-Founders</h2><br><br>
-
-        <div id="pics" align="center" class="row">
-            <div class="profile col-sm">
-                <img src="./images/david.jpeg" alt="David">
-                <h4 class="name">David-Lior Banoun Rappaz</h4>
-                <p class="description"></p>
-            </div>
-            <div class="profile col-sm">
-                <img src="./images/aisha.png" alt="Aisha">
-                <h4 class="name">Aisha Shafique</h4>
-                <p class="description"></p>
-            </div>
-            <div class="profile col-sm">
-                <img src="./images/sam2.png" alt="Sammarth">
-                <h4 class="name">Sammarth Kumar</h4>
-                <p class="description"></p>
-            </div>
-            <div class="profile col-sm">
-                <img src="./images/reem.png" alt="Reem">
-                <h4 class="name">Reem A. Saad</h4>
-                <p class="description"></p>
-            </div>
-        </div>
-        <!--
-        <br><br>
-        <h2>Our Story</h2>
-        <br><br>
-        <p>
-
-        </p>
-    -->
-
-        <div id="connect" align="center">
-            <h2>Connect with Us</h2>
-            <a class="links" href="https://instagram.com/acorn.prep"><i class="fa fa-instagram"
-                    aria-hidden="true"></i></a>
-            <a class="links" href="mailto:contact@acornprep.live"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-        </div>
-    </div>
-    </div>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <script>
-        icon = document.getElementById('ic');
-        icon.className = "fa fa-bars";
-
-        function nav() {
-            ob = document.getElementById('sidebar');
-            icon = document.getElementById('ic');
-            if (ob.className === "open") {
-                ob.className = "closed";
-                icon.className = "fa fa-bars";
-            } else {
-                ob.className = "open";
-                icon.className = "fa fa-times";
-            }
-        }
-    </script>
-</body>
-<img id="grass" src="images/grass.svg">
-<footer>
-     <a href="Status-2.pdf"> Status of AcornPrep</a> <br>
-   
-    Developed and Designed by <a href="https://sammarthkumar.me"><strong>Sammarth Kumar<strong></a>
-</footer>
-
+	</body>
 </html>
+
